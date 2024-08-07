@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi Portafolio || Kevin Brayan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css.css">
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/cb62d04c88.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="contenedor-web" id="home">
+        <section>
+            <div class="video">
+                <video autoplay muted loop id="background-video">
+                    <source src="video/background.mp4" type="video/mp4">
+                    Tu navegador no soporta el formato de video.
+                </video>
+            </div>
+            <aside class="web-titulo text-center text-light">
+                <h3 class="display-6">Hola, yo soy</h3>
+                <h1 class="display-1 mt-4">Kevin Brayan</h1>
+                <h6 class="display-6 mt-4">Desarrollador Web | HTML CSS PHP JAVASCRIPT</h6>
+                <div class="bton mt-4">
+                    <a href="#" class="btn btn-danger">Descargar CV</a>
+                </div>
+            </aside>
+        </section>
+    </section>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#home">
+                    <h2 class="ps-4">KBrayan</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link text-nav" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-nav" href="#sobremi">Sobre Mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-nav" href="#trabajos">Trabajos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-nav" href="#portafolio">Portafolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-nav" href="#servicios">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-nav" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Modal Descripción -->
+    <div class="modal fade" id="habilidadModal" tabindex="-1" aria-labelledby="habilidadModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="habilidadModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SOBRE MI-->
+    <article id="sobremi">
+        <div class="row text-center text-white gy-3">
+            <div class="col-12">
+                <h1><i class="fa-solid fa-user-tie pe-4"></i>SOBRE MI</h1>
+            </div>
+            <div class="col-12">
+                <p>Una breve Descripción de mi persona y mi etapa Profesional</p>
+            </div>
+        </div>
+        <div class="container  bg-white bg-opacity-50 p-0" style="border-radius: 15px;">
+            <div class="row  align-items-center">
+                <div class="col-lg-7 col-md-12 col-12 p-4">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <img src="img/perfil.jpg" class="img-fluid"
+                                style="width:300px; height: 300px; border-radius: 50%;" alt="Fotografia">
+                        </div>
+                        <div class=" col-md-6 col-12 d-flex flex-column justify-content-center ps-4">
+                            <aside><strong>Nombre:</strong> Kevin Brayan Yanayaco Chaca</aside>
+                            <aside><strong>Carr. Profesional:</strong> Ingeniero de Sistemas y Computación</aside>
+                            <aside><strong>Perfil:</strong> Analista de Sistemas de Información</aside>
+                            <aside><strong>E-mail:</strong> Kevinyanayacochaca@gmail.com</aside>
+                            <aside><strong>Telefono:</strong> +51 933264105</aside>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-12 text-center py-3">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger d-lg-none" data-bs-toggle="modal"
+                        data-bs-target="#habilidadModal">
+                        Habilidades
+                    </button>
+
+                    <div class="container d-lg-block d-none">
+                        <h4>Habilidades</h4>
+                        <aside>HTML</aside>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example"
+                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated text-bg-info"
+                                style="width: 100%">100%
+                            </div>
+                        </div>
+                        <aside>CSS</aside>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example"
+                            aria-valuenow="95" aria-valuemin="0" aria-valuemax="95">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated text-bg-success"
+                                style="width: 95%">95%
+                            </div>
+                        </div>
+                        <aside>SASS</aside>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example"
+                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="85">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated text-bg-danger"
+                                style="width: 85%">85%
+                            </div>
+                        </div>
+                        <aside>PHP</aside>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example"
+                            aria-valuenow="95" aria-valuemin="0" aria-valuemax="95">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated text-bg-primary"
+                                style="width: 95%">95%
+                            </div>
+                        </div>
+                        <aside>JAVASCRIP</aside>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example"
+                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated text-bg-warning"
+                                style="width: 100%">100%
+                            </div>
+                        </div>
+                        <aside>ANGULAR</aside>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example"
+                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated text-bg-danger"
+                                style="width: 100%">100%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <div class="row text-center text-white gy-3">
+            <div class="col-12 titulo">
+                <h1><i class="fa-solid fa-list-check pe-4"></i>
+                    ESTUDIOS & EXPERIENCIA</h1>
+            </div>
+            <div class="col-12">
+                De manera resumida detallo mis estudios realizados y mi experiencia.
+            </div>
+        </div>
+        <div class="container-fluid text-white p-5">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="container bg-dark p-4" style="border-radius: 15px;">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr class="text-center">
+                                    <th><h3>Estudios</h3></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Fila 1, Columna 1</td>
+                                </tr>
+                                <tr>
+                                    <td>Fila 2, Columna 1</td>
+                                </tr>
+                                <tr>
+                                    <td>Fila 3, Columna 1</td>
+                                </tr>
+                                <tr>
+                                    <td>Fila 4, Columna 1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="container bg-dark p-4" style="border-radius: 15px;">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr class="text-center">
+                                    <th><h3>Experiencia</h3></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Fila 1, Columna 1</td>
+                                </tr>
+                                <tr>
+                                    <td>Fila 2, Columna 1</td>
+                                </tr>
+                                <tr>
+                                    <td>Fila 3, Columna 1</td>
+                                </tr>
+                                <tr>
+                                    <td>Fila 4, Columna 1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!--SERVICIOS-->
+    <article id="servicios">
+        <div class="row text-center text-white gy-3">
+            <div class="col-12 titulo">
+                <h1><i class="fa-solid fa-gears pe-4"></i>
+                    SERVICIOS</h1>
+            </div>
+            <div class="col-12">
+                De manera general se describen los servicios más importantes que ofrezco a mis clientes.
+            </div>
+        </div>
+        <div class="container-fluid py-5">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 col-12 mb-3 ">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5> <i class="fa-regular fa-file-code pe-2"></i>Programación</h5>
+                        </div>
+                        <div class="card-body">
+                            <aside>HTML - <i class="fa-brands fa-html5"></i></aside>
+                            <aside>CSS - <i class="fa-brands fa-css3-alt"></i></aside>
+                            <aside>PHP - <i class="fa-brands fa-php"></i></aside>
+                            <aside>Base de Datos - <i class="fa-solid fa-database"></i></aside>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-3 ">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fa-solid fa-display pe-2"></i>Tecnologías</h5>
+                        </div>
+                        <div class="card-body">
+                            <aside>Boostrap - <i class="fa-brands fa-bootstrap"></i></aside>
+                            <aside>Wordpress - <i class="fa-brands fa-wordpress"></i></aside>
+                            <aside>jQuery - <i class="fa-solid fa-spinner"></i></aside>
+                            <aside>JavaScript - <i class="fa-brands fa-js"></i></aside>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-3 ">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fa-solid fa-display pe-2"></i>Diseño</h5>
+                        </div>
+                        <div class="card-body">
+                            <aside>Photoshop - <i class="fa-solid fa-p"></i></aside>
+                            <aside>Adobe xD - <i class="fa-solid fa-bezier-curve"></i></aside>
+                            <aside>Adobe Premiere - <i class="fa-brands fa-product-hunt"></i></aside>
+                            <aside>Adobe Ilustrator - <i class="fa-solid fa-pen-nib"></i></aside>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fa-solid fa-wrench pe-2"></i>
+                            Soporte Técnico
+                        </div>
+                        <div class="card-body">
+                            <aside>Mantenimiento de equipos de cómputo - <i class="fa-solid fa-computer"></i></aside>
+                            <aside>Correctivo & Preventivo - <i class="fa-solid fa-gears"></i></aside>
+                            <aside>Licencia de antivirus & software - <i class="fa-solid fa-id-card"></i></aside>
+                            <aside>Instalación Programas - <i class="fa-brands fa-uncharted"></i></aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!--footer-->
+    <section class="web-footer">
+        <div id="contacto" class="row text-center text-white gy-3">
+            <div class="col-12 titulo">
+                <h1><i class="fa-solid fa-gears pe-4"></i>
+                    CONTACTO</h1>
+            </div>
+            <div class="col-12">
+                De manera general se describen los servicios más importantes que ofrezco a mis clientes.
+            </div>
+        </div>
+        <footer class="mt-5 web-footer-content">
+            <div class="container bg-white bg-opacity-50 p-5">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <h3>Enviame un mensaje</h3>
+                        <form>
+                            <div class="mb-4">
+                                <input type="text" class="form-control" id="nombre" name="nombre"
+                                    aria-describedby="emailHelp" placeholder="Tu nombre">
+                            </div>
+                            <div class="mb-4">
+                                <input type="text" class="form-control" id="correo" name="correo"
+                                    aria-describedby="emailHelp" placeholder="Tu Correo">
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" class="form-control" id="asunto" name="asunto"
+                                    aria-describedby="emailHelp" placeholder="asunto">
+                            </div>
+                            <div class="mb-4">
+                                <textarea name="descripcion" id="descripcion" class="form-control">kjsbac</textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <h3>Contacto</h3>
+                        <div>
+                            <h5>Si necesitas ayuda en algún proyecto, no dudes en ponerte en contacto conmigo.</h5>
+                            <div>
+                                <aside>Lazaro Cardenas #14, Col. Popular 176 A. C.</aside>
+                                <aside>Juventino Rosas, Gto. México. C. P. 38240</aside>
+                                <aside> +52 1 (412) 134-0066</aside>
+                                <aside>valencia_vik@hotmail.com</aside>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-around mt-3">
+                            <a href="#" class="icons"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" class="icons"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="icons"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="icons"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="icons"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <div class="pie-pagina">
+            <div class="row bg-white bg-opacity-50">
+                <div class="col text-center">
+                    <p> © Copyright 2024. Kevin Brayan v0.0.45.</p>
+
+                    <p>Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+                navbar.classList.remove('navbar-transparent');
+            } else {
+                navbar.classList.add('navbar-transparent');
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

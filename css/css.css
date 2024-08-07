@@ -1,0 +1,151 @@
+/* css.css */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-repeat: no-repeat; /* No se repetirá */
+    background-attachment: fixed; /* Fijar el fondo para que no se mueva al hacer scroll */
+    background-size: cover;
+}
+.row, .col{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.contenedor-web {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.navbar.navbar-transparent {
+    background-color: transparent;
+}
+
+.navbar.navbar-scrolled {
+    background-color: black;
+}
+
+.navbar.navbar-scrolled .nav-link, 
+.navbar.navbar-scrolled .navbar-brand {
+    color: white !important;
+}
+.text-nav{
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+}
+.text-nav:hover{
+    color: rgb(63, 107, 145);
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.web-titulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+.titulo{
+    text-align: center;
+    color: white;
+}
+
+article{
+    width: auto;
+    padding-top: 70px;
+}
+/* Aplica estilos a todos los aside excepto el primero */
+aside:not(:first-of-type) {
+    text-align: left;
+    margin-top: 20px;
+}
+aside{
+    text-align: left;
+}
+.web-footer{
+    width: auto;
+    height: 100vh;
+    position: relative;
+    background-image: url("../img/footer.jpg");
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 70px;
+}
+.web-footer-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+.icons{
+    font-size: 2.5rem;
+    color: black;
+    border-radius: 50%;
+}
+.icons:hover{
+    color: rgb(84, 161, 136);
+    font-size: 2.8rem;
+}
+.pie-pagina{
+    position: absolute;
+    width: 100%;
+    top: 91%;
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .web-footer {
+        height: auto;
+        background-attachment: scroll;
+    }
+
+    .web-footer-content {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+
+    .pie-pagina {
+        position: relative;
+        top: auto;
+    }
+}
